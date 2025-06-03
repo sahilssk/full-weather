@@ -1,0 +1,271 @@
+*{
+
+
+    font-family: "Montserrat", serif;
+}
+.HOME{
+  position: absolute;
+  text-decoration: none;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  left: 1300px;
+  
+}
+.typewriter {
+  font-size: 30px;
+  white-space: nowrap;
+  border-right: 3px solid orange;
+  overflow: hidden;
+  width: 10;
+  animation: typing 6s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+body {
+    font-family: sans-serif;
+    color:  #FEFAE0;
+    background: linear-gradient(90deg,#FFD700, #008080,#C0C0C0,#FF4500);
+    background-size: 400% 400%; 
+    animation: gradientAnimation 5s ease infinite; 
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%; 
+    }
+    50% {
+      background-position: 100% 50%; 
+    }
+    100% {
+      background-position: 0% 50%; 
+    }
+  }
+  h1{
+    font-size: 35px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    
+    */
+  }
+  input{
+    color:  #FEFAE0;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 50px;
+    border-style: hidden;
+    text-align: center;
+    background-color: #08115a;
+    position: absolute;
+    left: 800px;
+    top: 10px;
+   
+
+  }
+
+
+  input:hover{
+    background-color: 	#08115a;
+    transform: scale(1.05);
+    transition: 1s ease;
+    
+  }
+ 
+
+  input::placeholder{
+    color:  #FEFAE0;
+    font-family: sans-serif;
+    font-size: 30px;
+    opacity: 80%;
+  }
+  input:hover::placeholder{
+    color: #08115a;
+    transition: 1s linear;
+
+  }
+  input:focus{
+    outline: none;
+  }
+
+  .btn{
+    
+    
+    border: none;
+    outline: none;
+    color: #FEFAE0;
+    z-index: 0;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    border-radius: 30px;
+    font-size: 30px;
+    top: 20px;
+    left: 1200px;
+    border-style:none;
+
+
+  }
+
+  .btn::after{
+    
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    background-color:;
+    left: 9px;
+    top: 5px;
+    border-radius: 30px;
+
+
+  }
+  .btn::before{
+    content: "";
+    background: linear-gradient(45deg, #FF0000, #FCED22);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+    opacity: 1;
+  }
+
+  @keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+  }
+
+  .btn:hover::before{
+    opacity: 1;
+  }
+
+  .btn:active::after{
+    background: transparent;
+    
+  }
+
+  .btn:active{
+    color: #FEFAE0;
+   font-size: 32px;
+    background: linear-gradient(45deg, #FF0000, #FCED22);
+  }
+  p{
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .container{
+    display: flex;
+    gap: 100px;
+    white-space: nowrap; 
+  overflow-x: auto; 
+  position: relative;
+  bottom: 35px;
+  scrollbar-width: none;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .temprature{
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tempimg{
+    height: 150px;
+  }
+
+  .info{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 45px;
+
+  }
+
+  .humiimg{
+    height: 150px;
+  }
+
+  .container2{
+    position: relative;
+  bottom: 70px;
+    display: flex;
+    gap: 100px;
+    white-space: nowrap; 
+  overflow-x: auto; 
+  scrollbar-width: none;
+  }
+
+  .container2::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .humidity{
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container3{
+    position: relative;
+  bottom: 105px;
+    display: flex;
+    gap: 90px;
+    white-space: nowrap; 
+  overflow-x: auto; 
+  scrollbar-width: none;
+  }
+
+  .container3::-webkit-scrollbar {
+    display: none; 
+  }
+
+.windimg{
+    height: 150px;
+}
+
+.wind{
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.windinfo{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+}
+img{
+    height: 150px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
